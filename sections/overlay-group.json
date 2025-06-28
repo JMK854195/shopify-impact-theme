@@ -50,7 +50,7 @@
       "disabled": true,
       "settings": {
         "full_width": false,
-        "show_article_category": true,
+        "show_article_category": false,
         "search_menu": "",
         "search_menu_show_title": false
       }
