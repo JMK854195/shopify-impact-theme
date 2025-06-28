@@ -27,11 +27,19 @@
             "text": "Peste 50.000 clienți mulțumiți",
             "url": ""
           }
+        },
+        "message_nMXaac": {
+          "type": "message",
+          "settings": {
+            "text": "GARANȚIE 10 ANI",
+            "url": ""
+          }
         }
       },
       "block_order": [
         "message_wy9mhU",
-        "message"
+        "message",
+        "message_nMXaac"
       ],
       "settings": {
         "enable_sticky": false,
