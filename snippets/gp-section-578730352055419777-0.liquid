@@ -23,7 +23,7 @@
     <div data-id="g6hV0IjcAF"
         class="g6hV0IjcAF"
         style="--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1754911195689"
+        data-test-force-publish="1754911330993"
       >
       <div  >
         <h1
@@ -48,7 +48,7 @@
     <div id="p-price-gESUu2K_f5" data-id
         
         style="--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1754911195706"
+        data-test-force-publish="1754911330993"
       >
       <div  >
         <div
@@ -977,7 +977,7 @@ const secondContainer = document.querySelector('#secondProduct');
     <div data-id
         class="gp-w-full"
         style="--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1754911195718"
+        data-test-force-publish="1754911331001"
       >
       <div class="gp-flex" >
         <div
@@ -1010,7 +1010,7 @@ const secondContainer = document.querySelector('#secondProduct');
     <div data-id
         class="gp-w-full"
         style="--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1754911195719"
+        data-test-force-publish="1754911331001"
       >
       <div class="gp-flex" >
         <div
@@ -1043,7 +1043,7 @@ const secondContainer = document.querySelector('#secondProduct');
     <div data-id
         class="gp-w-full"
         style="--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1754911195719"
+        data-test-force-publish="1754911331001"
       >
       <div class="gp-flex" >
         <div
@@ -1076,7 +1076,7 @@ const secondContainer = document.querySelector('#secondProduct');
     <div data-id
         class="gp-w-full"
         style="--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1754911195719"
+        data-test-force-publish="1754911331001"
       >
       <div class="gp-flex" >
         <div
@@ -1412,39 +1412,80 @@ const secondContainer = document.querySelector('#secondProduct');
   
       <script id="custom-js-gRplA7vpsE">
         try {
-          document.addEventListener("DOMContentLoaded", function () {
-  const addBothBtn = document.getElementById("addBothBtn");
-  const firstVariant = document.querySelector("#firstProduct [name='id']");
-  const secondVariant = document.querySelector("#secondProduct [name='id']");
+          document.addEventListener('DOMContentLoaded', function() {
+  // --- CONFIG: cseréld ki ezekre az elementID-kre, amelyeket a GemPages Edit Code ablakból kapsz
+  const FIRST_CONTAINER_SEL = '#GF_FIRST_ID';   // pl. '#gf-element-abc123'
+  const SECOND_CONTAINER_SEL = '#GF_SECOND_ID'; // pl. '#gf-element-def456'
+  const BUTTON_SEL = '#GF_BUTTON_ID';           // pl. '#gf-element-zzz789' vagy '#addBothBtn'
 
-  if (!addBothBtn) return;
+  const firstContainer = document.querySelector(FIRST_CONTAINER_SEL);
+  const secondContainer = document.querySelector(SECOND_CONTAINER_SEL);
+  const addBothBtn = document.querySelector(BUTTON_SEL);
 
-  addBothBtn.addEventListener("click", function () {
-    if (!firstVariant || !secondVariant) {
-      alert("Kérlek válaszd ki mindkét terméket!");
+  if (!firstContainer || !secondContainer || !addBothBtn) {
+    console.warn('GemPages: hiányzó konténer vagy gomb - ellenőrizd az element ID-ket.');
+    return;
+  }
+
+  function findVariantId(container) {
+    if (!container) return null;
+    // próbáljuk a leggyakoribb helyeket
+    const candidates = [
+      'select[name="id"]',
+      'input[name="id"]',
+      'input[type="hidden"][name="id"]',
+      '[data-variant-id]',
+      '[data-variant]'
+    ];
+    for (const sel of candidates) {
+      const el = container.querySelector(sel);
+      if (!el) continue;
+      // select vagy input
+      if (el.tagName === 'SELECT' || el.tagName === 'INPUT') {
+        const v = el.value;
+        if (v) return parseInt(v, 10);
+      }
+      // data attribútum
+      const dataId = el.getAttribute('data-variant-id') || el.getAttribute('data-variant');
+      if (dataId) return parseInt(dataId, 10);
+    }
+    // végső próbálkozás: keresünk bármilyen elemre, amin van data-variant-id
+    const any = container.querySelector('[data-variant-id]');
+    if (any) return parseInt(any.getAttribute('data-variant-id'), 10);
+    return null;
+  }
+
+  addBothBtn.addEventListener('click', function(evt) {
+    evt.preventDefault();
+    const v1 = findVariantId(firstContainer);
+    const v2 = findVariantId(secondContainer);
+
+    if (!v1 || !v2) {
+      alert('Kérlek válaszd ki mindkét színt (variánst)!');
       return;
     }
 
-    const firstVariantId = parseInt(firstVariant.value);
-    const secondVariantId = parseInt(secondVariant.value);
-
-    fetch("/cart/add.js", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        items: [
-          { id: firstVariantId, quantity: 1 },
-          { id: secondVariantId, quantity: 1 }
-        ]
-      })
+    // Küldés Shopify kosárhoz egyszerre
+    fetch('/cart/add.js', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ items: [ { id: v1, quantity: 1 }, { id: v2, quantity: 1 } ] })
     })
-    .then(res => res.json())
+    .then(res => {
+      if (!res.ok) throw new Error('Hiba a kosárhoz adásnál');
+      return res.json();
+    })
     .then(() => {
-      window.location.href = "/cart";
+      // átirányítás kosár oldalra (ha inkább mini-kosarat szeretnél, jelezd)
+      window.location.href = '/cart';
     })
-    .catch(err => console.error(err));
+    .catch(err => {
+      console.error(err);
+      alert('Hiba történt a kosárhoz adáskor. Nézd meg a konzolt (F12).');
+    });
   });
 });
+
 
         } catch(err){}
       </script>
@@ -1453,7 +1494,7 @@ const secondContainer = document.querySelector('#secondProduct');
     <div data-id="gmsvkwKb1S"
         class="gmsvkwKb1S"
         style="--ta:left;--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:block;--d-mobile:none;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:8px;--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1754911195722"
+        data-test-force-publish="1754911331003"
       >
       <div class="gp-flex" style="--jc:left">
         <div
@@ -1587,7 +1628,7 @@ const secondContainer = document.querySelector('#secondProduct');
     <div data-id
         class="gp-w-full"
         style="--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1754911195726"
+        data-test-force-publish="1754911331005"
       >
       <div class="gp-flex" >
         <div
@@ -1658,7 +1699,7 @@ const secondContainer = document.querySelector('#secondProduct');
     <div data-id
         class="gp-w-full"
         style="--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1754911195727"
+        data-test-force-publish="1754911331005"
       >
       <div class="gp-flex" >
         <div
@@ -1694,7 +1735,7 @@ const secondContainer = document.querySelector('#secondProduct');
     <div data-id="ghBs_kYbRm"
         class="ghBs_kYbRm"
         style="--ta:left;--d:block;--d-tablet:block;--d-mobile:block;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--op:100%;--dynamic-source-color:#F4F4F4"
-        data-test-force-publish="1754911195734"
+        data-test-force-publish="1754911331014"
       >
       <div class="gp-flex" style="--jc:left">
         <div
