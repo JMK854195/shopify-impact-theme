@@ -10,53 +10,127 @@
 {
   "sections": {
     "gp_shopify_original_section_578720958961943271": {
+      "type": "gp-section-578720958961943271",
       "settings": {
+        "section_preload": "true",
         "checksum": "",
-        "section_preload": "true"
-      },
-      "type": "gp-section-578720958961943271"
+        "ggKhZbteFGD_text": "<p>You are pefect</p>",
+        "ggYo3gW0gCn_text": "<p><span style=\"font-size:15px;\">100,000+ Vândut</span></p>",
+        "ggdaztmoUB__text": "Rezistent la transfer. Rezistent la apă. Nu usucă buzele.",
+        "ggUUcMre7Le_text": "RUJ PERSISTENT PENTRU TOATĂ ZIUA",
+        "ggZYRz_eNko_label": "Shop Now",
+        "ggdF4H7j_fD_text": "<p>Tehnologie brevetată Wonder Blading – premiată internațional</p>"
+      }
     },
     "gp_shopify_original_section_578721263552299643": {
-      "settings": {
-        "checksum": ""
+      "type": "gp-section-578721263552299643",
+      "blocks": {
+        "simple_bundles_kits_infinite_options_selector_jLLxP7": {
+          "type": "shopify://apps/simple-bundles-kits/blocks/infinite-options-selector/e553276b-36b2-446d-b80a-aa47fe5f96ac",
+          "settings": {
+            "select_placeholder": "Please select an option",
+            "disable_oos_options": true,
+            "custom_css": "",
+            "custom_js": ""
+          }
+        }
       },
-      "type": "gp-section-578721263552299643"
-    },
-    "gp_shopify_original_section_578721285077467771": {
+      "block_order": [
+        "simple_bundles_kits_infinite_options_selector_jLLxP7"
+      ],
       "settings": {
-        "checksum": ""
-      },
-      "type": "gp-section-578721285077467771"
-    },
-    "gp_shopify_original_section_578721285077467879": {
-      "settings": {
-        "checksum": ""
-      },
-      "type": "gp-section-578721285077467879"
-    },
-    "gp_shopify_original_section_578721285094245249": {
-      "settings": {
-        "checksum": ""
-      },
-      "type": "gp-section-578721285094245249"
-    },
-    "gp_shopify_original_section_578721285094245257": {
-      "settings": {
-        "checksum": ""
-      },
-      "type": "gp-section-578721285094245257"
-    },
-    "gp_shopify_original_section_578721304975246209": {
-      "settings": {
-        "checksum": ""
-      },
-      "type": "gp-section-578721304975246209"
+        "section_preload": "false",
+        "checksum": "",
+        "gVhgduHDigYTr_text": "OFERTĂ DE VARĂ",
+        "ggRgtEl7I1B_text": "Promoție limitată"
+      }
     },
     "gp_shopify_original_section_578730352055419777": {
+      "type": "gp-section-578730352055419777",
       "settings": {
+        "section_preload": "false",
+        "checksum": "",
+        "ggk6j-QnLsh_text": "<p>Boosts immunity and defense</p>",
+        "ggQ0AwkLzbR_text": "<p>Boosts immunity and defense</p>",
+        "ggrLbUYlLC5_text": "<p>Boosts immunity and defense</p>",
+        "ggRdAozhPBI_text": "<p>Briana M.</p>",
+        "ggtAgPr9lDB_childItem_0": "<p>Verified Buyer</p>",
+        "ggAv41iBneA_text": "<p>“At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum”</p>",
+        "gg5N3WCfAOP_childItem_0": "<p>Rezistent la apă</p>",
+        "gg5N3WCfAOP_childItem_1": "<p>Rezistent la transfer</p>",
+        "gg5N3WCfAOP_childItem_2": "<p>Rezistent la pete</p>",
+        "gg5N3WCfAOP_childItem_3": "<p>Fără bătăi de cap</p>",
+        "ggr3DzLWa7f_label": "Adaugă în coș",
+        "ggmsvkwKb1S_text": "Quantity",
+        "ggYVE_OkXSx_childItem_0": "<p>100% Money-Back Guarantee</p>",
+        "ggzpvKnorbU_childItem_0": "<p>60-Day Easy Returns and Exchanges</p>",
+        "gghBs_kYbRm_text": "<p>Nu e culoarea perfectă? Îți oferim schimburi nelimitate – poți încerca orice nuanță fără riscuri.</p>"
+      }
+    },
+    "gp_shopify_original_section_578721285077467771": {
+      "type": "gp-section-578721285077467771",
+      "settings": {
+        "section_preload": "false",
+        "checksum": "",
+        "gGlfwTqJAxPXt_text": "Rezistență întreaga zi, ca un tatuaj de culoare.",
+        "gDZCZRwEKgtgE_text": "<p>Tehnologia noastră brevetată <i>Liquid Blading</i> infuzează pigmenții în stratul superior al buzelor, apoi îi sigilează, astfel încât culoarea să nu se estompeze sau să se transfere ore în șir.</p><p><br>Formula noastră naturală, în doi pași, este rezistentă la apă (🥂 noroc!), rezistentă la transfer (👄 poți săruți fără griji!) și fără alcool (💧 fără buze uscate!) – pentru o culoare intensă și confort maxim pe tot parcursul zilei.</p>"
+      }
+    },
+    "gp_shopify_original_section_578721285077467879": {
+      "type": "gp-section-578721285077467879",
+      "settings": {
+        "section_preload": "false",
+        "checksum": "",
+        "gg1qSREX8CZ_text": "Wonder Blade cum <br>îți place",
+        "gBpDScuJzoXqM_text": "<p><strong>APLICARE CU ȘTERGERE:</strong> Pentru un look rezistent și fără bătăi de cap, aplică <i><strong>LIP STAIN MASQUE</strong></i>, lasă să acționeze 10-30 secunde, apoi șterge cu un prosopel umed sau un șervețel.</p>",
+        "gg83gzbYdfb_text": "<p><strong>SCRUB DE BUZE 3-ÎN-1:</strong> Un singur pas pentru buze moi și hrănite. Lasă buzele netede înainte de a aplica <i><strong>LIP STAIN MASQUE</strong></i><strong> cu </strong><i><strong>ACTIVATOR</strong></i>. <strong>Finalizează</strong> cu <i><strong>WONDER BLADING TOP GLOSS</strong></i> pentru hidratare și volum toată ziua. Buzele tale n-au arătat niciodată mai bine!</p>"
+      }
+    },
+    "gp_shopify_original_section_578721285094245257": {
+      "type": "gp-section-578721285094245257",
+      "settings": {
+        "section_preload": "false",
+        "checksum": "",
+        "giSGgkefuxKIT_text": "Blading <br>Minune ASPECT",
+        "gGnvAyVZqdocp_text": "<p>Fără-PFAS</p>",
+        "gxwnytnOLnntn_text": "<p>fără-parabeni</p>",
+        "ghvVTWQezdTyp_text": "VEGAN",
+        "gZRCxYumNrcBG_text": "<p>rezistent-la apă</p>",
+        "gmqDieFhJhGAN_text": "<p>REZISTENT LA TRANSFER</p>",
+        "gjMKvHIaAipNs_text": "<p>REZISTENȚĂ ÎN TIMP</p>"
+      }
+    },
+    "gp_shopify_original_section_578721285094245249": {
+      "type": "gp-section-578721285094245249",
+      "settings": {
+        "section_preload": "false",
+        "checksum": "",
+        "gRAkQYjSlxZif_text": "<p>\"Singurul ruj tip stain care rezistă de dimineața până seara. Nuanța mea preferată este <i>Lovely</i> – seara aplic peste ea <i>Wonder Blading Top Gloss</i> și astfel culoarea capătă o viață nouă, devenind intensă și dramatică.\"</p>",
+        "ghrJcZGwpfBaa_text": "<p>Cumpărător verificat</p>"
+      }
+    },
+    "gp_shopify_original_section_578721304975246209": {
+      "type": "gp-section-578721304975246209",
+      "settings": {
+        "section_preload": "false",
         "checksum": ""
-      },
-      "type": "gp-section-578730352055419777"
+      }
+    },
+    "1755004908224ed04a": {
+      "type": "apps",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "enable_review_integration": true,
+        "review_header_gradient": "linear-gradient(135deg, #FFC266 0%, #FFA31A 100%)",
+        "review_header_text_color": "#000000",
+        "review_button_background": "#000000",
+        "review_button_text_color": "#ffffff"
+      }
     }
   },
   "order": [
@@ -67,6 +141,7 @@
     "gp_shopify_original_section_578721285077467879",
     "gp_shopify_original_section_578721285094245257",
     "gp_shopify_original_section_578721285094245249",
-    "gp_shopify_original_section_578721304975246209"
+    "gp_shopify_original_section_578721304975246209",
+    "1755004908224ed04a"
   ]
 }
