@@ -24,20 +24,6 @@
     },
     "gp_shopify_original_section_578721263552299643": {
       "type": "gp-section-578721263552299643",
-      "blocks": {
-        "simple_bundles_kits_infinite_options_selector_jLLxP7": {
-          "type": "shopify://apps/simple-bundles-kits/blocks/infinite-options-selector/e553276b-36b2-446d-b80a-aa47fe5f96ac",
-          "settings": {
-            "select_placeholder": "Please select an option",
-            "disable_oos_options": true,
-            "custom_css": "",
-            "custom_js": ""
-          }
-        }
-      },
-      "block_order": [
-        "simple_bundles_kits_infinite_options_selector_jLLxP7"
-      ],
       "settings": {
         "section_preload": "false",
         "checksum": "",
