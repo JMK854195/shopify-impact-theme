@@ -43,20 +43,20 @@
       ],
       "settings": {
         "enable_sticky": true,
-        "text_size": "text-xs",
+        "text_size": "text-base",
         "navigation_mode": "scrolling",
         "scrolling_speed": 10,
-        "background": "#1a1a1a",
+        "background": "#e9e0d1",
         "background_gradient": "",
-        "text_color": "#ffffff"
+        "text_color": "#000000"
       }
     },
     "header": {
       "type": "header",
       "settings": {
-        "enable_sticky": true,
+        "enable_sticky": false,
         "hide_on_scroll": false,
-        "logo_max_width": 160,
+        "logo_max_width": 125,
         "logo_mobile_max_width": 170,
         "menu": "main-menu",
         "sidebar_menu": "",
@@ -70,6 +70,7 @@
         "show_country_flag": false,
         "show_country_name": false,
         "transparent_header_text_color": "#ffffff",
+        "transparent_logo": "shopify://shop_images/BabyPulse_logo.jpg",
         "reduce_padding": true,
         "background_opacity": 100,
         "background_blur_radius": 0
