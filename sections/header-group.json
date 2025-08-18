@@ -56,7 +56,6 @@
       "settings": {
         "enable_sticky": true,
         "hide_on_scroll": false,
-        "logo": "shopify://shop_images/BabyPulse_logo.jpg",
         "logo_max_width": 160,
         "logo_mobile_max_width": 170,
         "menu": "main-menu",
