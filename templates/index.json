@@ -54,30 +54,24 @@
       "type": "scrolling-text",
       "settings": {
         "full_width": true,
-        "text": "99% clor eliminat - 0,001 mm filtrare - 92% mai puțină încrețire",
-        "text_size": "large",
+        "text": "Próbáld ki most!",
+        "text_size": "medium",
         "text_style": "fill",
         "scrolling_mode": "auto",
         "scrolling_speed": 5,
-        "background": "",
+        "background": "#e9e0d1",
         "background_gradient": "",
-        "text_color": "",
+        "text_color": "#5a4632",
         "text_gradient": ""
       }
     },
     "rich_text_xFGCyf": {
       "type": "rich-text",
       "blocks": {
-        "subheading_beh4zU": {
-          "type": "subheading",
-          "settings": {
-            "text": "Revoluționează-ți experiența la duș!"
-          }
-        },
         "heading_XjtBfc": {
           "type": "heading",
           "settings": {
-            "text": "CALITATE SUPERIOARĂ",
+            "text": "Hallgasd meg a kisbabád szívének minden dobbanását – bárhol, bármikor",
             "heading_tag": "h1",
             "text_color": "",
             "gradient": ""
@@ -86,12 +80,11 @@
         "richtext_6y8XLR": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Bun venit la Filterbaby – unde fiecare picătură de apă înseamnă piele catifelată și păr strălucitor. Cu filtrele noastre inovatoare, aducem puritatea apei de izvor în casa ta.</p><p><strong>De ce să ne alegi?</strong><br/>✔ 99% eliminare clor și calcar<br/>✔ Instalare în 3 minute – fără expert<br/>✔ Peste 50.000 clienți mulțumiți</p>"
+            "content": "<p><br/>Semmihez sem hasonlítható az érzés, amikor először meghallod, ahogy a kisbabád szíve dobog. A BabyPulse ezt a pillanatot bármikor elhozza neked – a nappalidban, lefekvés előtt, vagy amikor csak szeretnéd.”<br/><br/></p><p></p>"
           }
         }
       },
       "block_order": [
-        "subheading_beh4zU",
         "heading_XjtBfc",
         "richtext_6y8XLR"
       ],
@@ -99,51 +92,9 @@
         "full_width": true,
         "content_width": "small",
         "text_position": "center",
-        "background": "",
+        "background": "#e9e0d1",
         "background_gradient": "",
-        "text_color": ""
-      }
-    },
-    "image-with-text-overlay": {
-      "type": "image-with-text-overlay",
-      "blocks": {
-        "1664424230c4756b0e-0": {
-          "type": "subheading",
-          "settings": {
-            "text": "Bun venit în lumea apei pure!"
-          }
-        },
-        "1664424230c4756b0e-1": {
-          "type": "heading",
-          "settings": {
-            "text": "FILTRU DE DUȘ REVOLUȚIONAR",
-            "heading_tag": "h1"
-          }
-        },
-        "1664424230c4756b0e-2": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Aquafiltr Pro transformă apa robinetului într-un izvor de hidratare. Spune adio pielii uscate și părului lipsit de viață.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "1664424230c4756b0e-0",
-        "1664424230c4756b0e-1",
-        "1664424230c4756b0e-2"
-      ],
-      "settings": {
-        "full_width": true,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "md",
-        "image": "shopify://shop_images/pexels-timmossholder-1049687.jpg",
-        "mobile_image": "shopify://shop_images/pexels-timmossholder-1049687.jpg",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 30
+        "text_color": "#5a4632"
       }
     },
     "press": {
@@ -202,7 +153,6 @@
     "slideshow",
     "scrolling-text",
     "rich_text_xFGCyf",
-    "image-with-text-overlay",
     "press"
   ]
 }
