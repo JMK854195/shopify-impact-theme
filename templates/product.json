@@ -18,20 +18,6 @@
     },
     "gp_shopify_original_section_578721263552299643": {
       "type": "gp-section-578721263552299643",
-      "blocks": {
-        "simple_bundles_kits_infinite_options_selector_jLLxP7": {
-          "type": "shopify://apps/simple-bundles-kits/blocks/infinite-options-selector/e553276b-36b2-446d-b80a-aa47fe5f96ac",
-          "settings": {
-            "select_placeholder": "Please select an option",
-            "disable_oos_options": true,
-            "custom_css": "",
-            "custom_js": ""
-          }
-        }
-      },
-      "block_order": [
-        "simple_bundles_kits_infinite_options_selector_jLLxP7"
-      ],
       "settings": {
         "checksum": ""
       }
@@ -39,44 +25,40 @@
     "gp_shopify_original_section_578721285077467771": {
       "type": "gp-section-578721285077467771",
       "settings": {
-        "checksum": ""
+        "checksum": "",
+        "section_preload": "true"
       }
     },
     "gp_shopify_original_section_578721285077467879": {
       "type": "gp-section-578721285077467879",
       "settings": {
-        "checksum": ""
+        "checksum": "",
+        "section_preload": "true"
       }
     },
     "gp_shopify_original_section_578721285094245249": {
       "type": "gp-section-578721285094245249",
       "settings": {
-        "checksum": ""
+        "checksum": "",
+        "section_preload": "true"
       }
     },
     "gp_shopify_original_section_578721285094245257": {
       "type": "gp-section-578721285094245257",
       "settings": {
-        "checksum": ""
+        "checksum": "",
+        "section_preload": "true"
       }
     },
     "gp_shopify_original_section_578721304975246209": {
       "type": "gp-section-578721304975246209",
       "settings": {
-        "checksum": ""
+        "checksum": "",
+        "section_preload": "true"
       }
     },
     "gp_shopify_original_section_578730352055419777": {
       "type": "gp-section-578730352055419777",
-      "blocks": {
-        "gp_app_simple-bundles-kits_gvlOXZfRzP": {
-          "type": "shopify://apps/simple-bundles-kits/blocks/infinite-options-selector/e553276b-36b2-446d-b80a-aa47fe5f96ac",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "gp_app_simple-bundles-kits_gvlOXZfRzP"
-      ],
       "settings": {
         "checksum": ""
       }
